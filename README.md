@@ -52,6 +52,8 @@ https://rinkeby.opensea.io/assets/0x2d4082bb8fb467b24499e6c28d8e5f110d7df691/0
 
 ![marketplace](img/1.png)
 
+https://rinkeby.opensea.io/accounts/0x0ee74f95b62c464cf55f0f9762a378a1549ba5d6
+
 ![marketplace](img/3.png)
 
 ![marketplace](img/4.png)

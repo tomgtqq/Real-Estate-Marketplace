@@ -68,3 +68,5 @@ typings/
 .DS_Store
 
 .secret
+
+.infuraKey

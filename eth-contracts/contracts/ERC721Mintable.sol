@@ -242,7 +242,7 @@ contract ERC721 is Pausable, ERC165 {
         address owner = ownerOf(tokenId);
         require(to != owner, "ERC721: approval to current owner");
 
-        require(_msgSender() == owner || isApprovedForAll(owner, _msgSender()),
+        require(msg.sender == owner || isApprovedForAll(owner, msg.sender),
             "ERC721: approve caller is not owner nor approved for all"
         );
 
@@ -668,7 +668,12 @@ contract ERC721Mintable is ERC721Metadata{
     constructor (string memory name, string memory symbol) ERC721Metadata(name,symbol,_baseTokenURI) public {
 
     }
-
+   /**
+     * @dev public function to mint a new token
+     * Reverts if the given token ID already exists
+     * @param to address the beneficiary that will own the minted token
+     * @param tokenId uint256 ID of the token to be minted
+     */
     function mint(address to, uint256 tokenId) public onlyOwner whenNotPaused returns (bool) {
         _mint(to, tokenId);
         _setTokenURI(tokenId);

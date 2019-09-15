@@ -47,6 +47,8 @@ Contract Address: 0x2d4082BB8fb467B24499E6C28D8e5F110D7DF691
 
 ### OpenSea marketplace
 
+https://rinkeby.opensea.io/assets/0x2d4082bb8fb467b24499e6c28d8e5f110d7df691/0
+
 
 ![marketplace](img/1.png)
 
